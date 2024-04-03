@@ -1,0 +1,222 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company",
+ "creation": "2022-04-13 11:04:30.259631",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "company",
+  "accounting_section",
+  "salary_account",
+  "tax_account",
+  "cash_payable_account",
+  "bank_payable_account",
+  "column_break_7",
+  "payroll_salary_account",
+  "payroll_tax_account",
+  "cost_center",
+  "insurance_details_section",
+  "insurance_account",
+  "company_insurances_account",
+  "column_break_15",
+  "payroll_insurance_account",
+  "company_insurances_expense_account",
+  "employee_advances_section",
+  "employee_advance_account",
+  "submit_payment_jv",
+  "column_break_16",
+  "advance_mode_of_payment",
+  "employee_advance_adjustment",
+  "advance_payment_account",
+  "advance_cost_center"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "accounting_section",
+   "fieldtype": "Section Break",
+   "label": "Accounting"
+  },
+  {
+   "fieldname": "salary_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Salary Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tax_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tax Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "insurance_account",
+   "fieldtype": "Link",
+   "label": "Insurance Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payroll_salary_account",
+   "fieldtype": "Link",
+   "label": "Payroll Salary Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payroll_tax_account",
+   "fieldtype": "Link",
+   "label": "Payroll Tax Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payroll_insurance_account",
+   "fieldtype": "Link",
+   "label": "Payroll Insurance Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cash_payable_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cash Payroll Payable Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bank_payable_account",
+   "fieldtype": "Link",
+   "label": "Bank Payroll Payable Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_advances_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Advances"
+  },
+  {
+   "fieldname": "employee_advance_account",
+   "fieldtype": "Link",
+   "label": "Employee Advance Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "advance_mode_of_payment",
+   "fieldtype": "Link",
+   "label": "Advance Mode Of Payment",
+   "options": "Mode of Payment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "advance_payment_account",
+   "fieldtype": "Link",
+   "label": "Advance Payment Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "submit_payment_jv",
+   "fieldtype": "Check",
+   "label": "Submit Payment Jv"
+  },
+  {
+   "fieldname": "advance_cost_center",
+   "fieldtype": "Link",
+   "label": "Advance Cost Center",
+   "options": "Cost Center",
+   "reqd": 1
+  },
+  {
+   "fieldname": "insurance_details_section",
+   "fieldtype": "Section Break",
+   "label": "Insurance Details"
+  },
+  {
+   "fieldname": "company_insurances_account",
+   "fieldtype": "Link",
+   "label": "Company Insurances Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_insurances_expense_account",
+   "fieldtype": "Link",
+   "label": "Company Insurances Expense Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee_advance_adjustment",
+   "fieldtype": "Link",
+   "label": "Employee Advance Adjustment",
+   "options": "Account",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-22 15:14:43.210305",
+ "modified_by": "Administrator",
+ "module": "HR Integration",
+ "name": "Company Accounts",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

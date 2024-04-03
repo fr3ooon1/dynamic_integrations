@@ -1,0 +1,147 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:hr_id",
+ "creation": "2022-09-25 10:50:13.356570",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hr_id",
+  "employee",
+  "employee_name",
+  "advance_settlement_amount",
+  "posting_date",
+  "column_break_5",
+  "month_id",
+  "year_id",
+  "month",
+  "year",
+  "payroll_month",
+  "journal_entry",
+  "hr_employee_advance",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "hr_id",
+   "fieldtype": "Data",
+   "label": "Hr ID",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Posting Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month_id",
+   "fieldtype": "Data",
+   "label": "Month ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "year_id",
+   "fieldtype": "Data",
+   "label": "Year ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "label": "month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payroll_month",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Payroll Month",
+   "options": "Payroll Month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "journal_entry",
+   "fieldtype": "Data",
+   "label": "Journal Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hr_employee_advance",
+   "fieldtype": "Link",
+   "label": "HR Employee Advance",
+   "options": "HR Employee Advance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "advance_settlement_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Advance Settlement Amount",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-25 11:33:03.606470",
+ "modified_by": "Administrator",
+ "module": "HR Integration",
+ "name": "HR Employee Advance Settlement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

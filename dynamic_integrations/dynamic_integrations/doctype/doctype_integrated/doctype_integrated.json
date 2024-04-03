@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{account}-{method}-{document}",
+ "creation": "2022-04-28 19:18:42.180359",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "account",
+  "document",
+  "method",
+  "template",
+  "success_respons",
+  "response_method"
+ ],
+ "fields": [
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "label": "account",
+   "options": "Api Integration Profile"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Link",
+   "label": "Doctype",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "method",
+   "fieldtype": "Select",
+   "label": "method",
+   "options": "post\nget\nput\ndelete"
+  },
+  {
+   "fieldname": "template",
+   "fieldtype": "Link",
+   "label": "Template",
+   "options": "Data Template"
+  },
+  {
+   "fieldname": "success_respons",
+   "fieldtype": "Link",
+   "label": "Success Respons",
+   "options": "Data Template"
+  },
+  {
+   "fieldname": "response_method",
+   "fieldtype": "Select",
+   "label": "Response Method",
+   "options": "post\nget\nput\ndelete"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-05-04 17:46:56.872513",
+ "modified_by": "Administrator",
+ "module": "Dynamic Integrations",
+ "name": "Doctype Integrated",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

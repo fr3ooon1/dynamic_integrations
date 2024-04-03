@@ -1,0 +1,240 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{payroll_month}-{employee_name}-{pay_template}",
+ "creation": "2022-04-11 15:18:30.508631",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_code",
+  "column_break_3",
+  "employee_name",
+  "section_break_5",
+  "payroll_month",
+  "month",
+  "month_id",
+  "pay_template",
+  "column_break_9",
+  "year",
+  "year_id",
+  "salary_details_section",
+  "net_salary",
+  "column_break_14",
+  "taxes",
+  "insurance",
+  "advance",
+  "company_insurance",
+  "section_break_16",
+  "bank_transfer",
+  "bank_name",
+  "bank_account",
+  "currency",
+  "column_break_19",
+  "insured",
+  "taxable"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payroll_month",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Payroll Month",
+   "options": "Payroll Month",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "payroll_month.year",
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "payroll_month.month",
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "label": "Month",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "payroll_month.month_id",
+   "fieldname": "month_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Month Id",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "payroll_month.year_id",
+   "fieldname": "year_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Year Id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "salary_details_section",
+   "fieldtype": "Section Break",
+   "label": "Salary Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "net_salary",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Net Salary",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "insurance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Insurance",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "bank_transfer",
+   "fieldtype": "Check",
+   "label": "Bank Transfer",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "bank_account",
+   "fieldtype": "Data",
+   "label": "Bank Account",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "insured",
+   "fieldtype": "Check",
+   "label": "Insured",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "taxable",
+   "fieldtype": "Check",
+   "label": "Taxable",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "label": "Currency",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "taxes",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Taxes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.hr_id",
+   "fieldname": "employee_code",
+   "fieldtype": "Data",
+   "label": "Employee Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pay_template",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Pay Template",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "company_insurance",
+   "fieldtype": "Float",
+   "label": "Company Insurance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "advance",
+   "fieldtype": "Float",
+   "label": "Advance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-22 11:23:00.923345",
+ "modified_by": "Administrator",
+ "module": "HR Integration",
+ "name": "Employee Salary",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

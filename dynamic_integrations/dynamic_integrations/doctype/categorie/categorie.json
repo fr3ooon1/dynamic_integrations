@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-21 14:53:10.848554",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "is_active",
+  "position",
+  "is_parent",
+  "remote_id",
+  "data_5"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "name",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is active"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "1",
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "position"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "is_parent",
+   "fieldtype": "Check",
+   "label": "is_parent"
+  },
+  {
+   "fieldname": "data_5",
+   "fieldtype": "Table",
+   "label": "Sub Categorie",
+   "options": "Sub Categorie"
+  },
+  {
+   "fieldname": "remote_id",
+   "fieldtype": "Data",
+   "label": "remote_id",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-21 14:56:15.549937",
+ "modified_by": "Administrator",
+ "module": "Dynamic Integrations",
+ "name": "Categorie",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

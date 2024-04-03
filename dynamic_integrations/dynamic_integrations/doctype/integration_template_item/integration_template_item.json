@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-17 12:33:58.926875",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fieldname",
+  "mapping_name",
+  "fieldtype",
+  "template",
+  "mapping_type",
+  "fetch_field",
+  "default_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "mapping_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mapping Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fieldname",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fieldname",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "default": "Normal",
+   "fieldname": "fieldtype",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "FieldType",
+   "options": "Normal\nList\nDict\nLink",
+   "reqd": 1
+  },
+  {
+   "fieldname": "template",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "template",
+   "mandatory_depends_on": "eval:doc.fieldtype != 'Normal'",
+   "options": "Integration Api Template"
+  },
+  {
+   "columns": 2,
+   "default": "Data",
+   "fieldname": "mapping_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Mapping Type",
+   "options": "Data\nInt\nFloat\nDate\nDatetime"
+  },
+  {
+   "columns": 1,
+   "fieldname": "default_value",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Default"
+  },
+  {
+   "fieldname": "fetch_field",
+   "fieldtype": "Data",
+   "label": "Fetch Field"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-14 15:31:41.660570",
+ "modified_by": "Administrator",
+ "module": "Dynamic Integrations",
+ "name": "Integration Template Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
